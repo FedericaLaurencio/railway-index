@@ -98,7 +98,7 @@ vec3 getresult(){
 	#endif
     shadow = min(1.0, shadow + suni * suni * 0.2 * SUBSURFACE);
 	suni *= (shaft * 0.1);
-	return pow(mix(vec3(shadow), pow(vec3(0.06, 0.58, 0.88), vec3(1.6)) + suni, c), vec3(1.0/2.2));
+	return pow(mix(vec3(shadow), pow(vec3(0.06, 0.72, 0.92), vec3(1.6)) + suni, c), vec3(1.0/2.2));
 }
 
 void main( void ) {
