@@ -4,10 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
     <style>
-    body {padding: 0; margin: 0;}
+    body {padding: 0; margin: 0;
+    overflow: hidden;}
     #myContainer{
       position: absolute;
       z-index: -1;
+    }
+    #title img{
+      width: 20%;
+      position: absolute;
+      left:50%;
+      top:2%;
+      transform: translate(-50%);
+    }
+
+    #title video{
+      width: 60%;
+      position: absolute;
+      left:50%;
+      transform: translate(-50%);
+      top:30%;
     }
 
 
@@ -19,15 +35,21 @@
     <script src="sketch.js"></script>
   </head>
   <body>
+
+    <div id="title">
+      <img src="railwayindex.png" alt="railway index">
+
+      <video controls >
+
+      <source src="./1.mp4"
+              type="video/mp4">
+
+      Sorry, your browser doesn't support embedded videos.
+  </video>
+</div>
     <div id="myContainer"></div>
 
-    <video controls width="600">
 
-    <source src="./1.mp4"
-            type="video/mp4">
-
-    Sorry, your browser doesn't support embedded videos.
-</video>
 
   </body>
 </html>
